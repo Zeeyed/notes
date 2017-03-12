@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500,600,700,300);
+*{
+  margin: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Raleway", sans-serif;
+  font-size: 14px;
+}
+
+a {
+  text-decoration: none;
+}
+
