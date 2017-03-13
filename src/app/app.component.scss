@@ -40,6 +40,17 @@ header{
   align-items: center;
 }
 
+.nav-settings{
+    float: right;
+    line-height: 65px;
+    .nav-settings-elements{
+      display: flex;
+      .nav-settings-elem{
+        margin-right: 15px;
+      }
+    }
+  }
+
 .logotype{
   display: flex;
   width: 160px;
