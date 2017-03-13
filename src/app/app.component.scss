@@ -42,7 +42,7 @@ header{
 
 .logotype{
   display: flex;
-  width: 120px;
+  width: 160px;
   min-width: 120px;
   height: 65px;
   color: white;
@@ -62,29 +62,41 @@ header{
 }
 
 .sidebar{
-  min-width: 120px;
+  min-width: 160px;
   background-color: $midnight;
 }
 
 .sidebar-list{
   display: flex;
-  margin-top: 30px;
+  margin-top: 20px;
   flex-flow: column wrap;
-  align-items: center;
   justify-content: center;
 }
 .sidebar-item{
-  margin-top: 25px;
+  display: flex;
+  //margin-top: 20px;
+  padding: 5px 14px;
   cursor: pointer;
-  color: #3a3d46;
-  font-size: 16px;
-  
+  color: #acb1b7;
+  font-size: 13px;
+  transition: all .2s ease-out;
+  .sb-logo{
+    margin-right: 10px;
+  }
+  .subitem-title{
+    padding-right: 25px;
+    line-height: 20px;
+  }
     &:hover{
       color: white;
     }
 }
 .sb-active {
-  color: $white;
+  background: #2f3c46;
+  border-left: 3px solid $white;
+  .subitem-title{
+    color: $white;
+  }
 }
 
 .content{
@@ -103,7 +115,8 @@ header{
         transition: background-color .3s ease;
         border-top: 1px solid rgba(0,0,0,0.1);
         border-right: 3px solid darken($blue,10%);
-        padding: 20px 20px;
+        padding: 11px;
+        margin: 0;
         display: flex;
         cursor: pointer;
         .subitem-logo{
