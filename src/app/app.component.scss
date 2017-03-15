@@ -5,6 +5,8 @@ $nav-color : $white;
 $blue      : #2196f3;
 $red       : #df2324;
 $yellow    : #fdd701;
+$color-red: #D6434D;
+$draft: #8CC0D6;
 
 @mixin transition($prop, $time) {
   transition: $prop $time ease;
@@ -116,12 +118,24 @@ header{
   background-color: $grey;
   height: 100%;
   display: flex;
+  .subitems-search{
+    padding: 20px;
+    background: #F8F6F4;
+    border-right: 3px solid darken($blue,10%);
+    input[type="search"]{
+      width: 100%;
+      border-radius: 40px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-sizing: border-box;
+    }
+  }
   .subitems{
     order: 1;
     width: 500px;
     .subitems-list{
       border-bottom: 1px solid #ddd;
-      li{
+      .subitems-list-item{
         background: #F8F6F4;
         transition: background-color .3s ease;
         border-top: 1px solid rgba(0,0,0,0.1);
@@ -137,6 +151,7 @@ header{
         .preview{
           order: 2;
           flex: 1;
+          margin-left: 9px;
           h3{
             margin: 0; 
             font-weight: 400;
@@ -145,6 +160,25 @@ header{
               float: right;
               color: #AAA;
               font-size: .8125rem;
+            }
+          }
+          .tags{
+            display: flex;
+            .tags-list-item{
+              border-radius: 1rem;
+              margin-left: 8px;
+              font-size: 0.65rem;
+              border-radius: 1rem;
+              margin: 0.2rem 0.1rem;
+              padding: 0.3rem;
+              &.red {
+                background: $color-red;
+                color: $white;
+              }
+              &.draft {
+                background: $draft;
+                color: $white;
+              }
             }
           }
           p{
