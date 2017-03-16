@@ -27,7 +27,6 @@ ul{
   display: flex;
   background-color: pink;
   flex-grow: 1;
-  
 }
 
 header{
@@ -77,6 +76,7 @@ header{
 .sidebar{
   min-width: 160px;
   background-color: $midnight;
+  min-height: 100vh;
 }
 
 .sidebar-list{
@@ -213,5 +213,29 @@ header{
       font-size: 1rem;
       line-height: 1.75;
     }
+  }
+}
+
+.add-note-content{
+  display: flex;
+  flex-flow: column;
+  .note-title {
+    margin: 1rem;
+    display: flex;
+    flex-flow: column;
+    .note-title-label{
+      margin: 10px;
+    }
+    input[type="text"]{
+      width: 100%;
+      border-radius: 5px;
+      border: 1px solid #ddd;
+      padding: 10px;
+      box-sizing: border-box;
+      margin: 5px;
+    }
+  }
+  .textarea{
+    min-height: 20em;
   }
 }
