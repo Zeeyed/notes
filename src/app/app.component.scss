@@ -1,7 +1,6 @@
 $grey      : #e6e6e6;
 $midnight  : #1f282f;
 $white     : #ffffff;
-$nav-color : $white;
 $blue      : #2196f3;
 $red       : #df2324;
 $yellow    : #fdd701;
@@ -29,49 +28,7 @@ ul{
   flex-grow: 1;
 }
 
-header{
-  display: flex;
-  height: 65px;
-  background-color: $nav-color;
-  align-items: center;
-  justify-content: space-between;
-}
-.navigation {
-  display: flex;
-  align-items: center;
-}
 
-.nav-settings{
-    float: right;
-    line-height: 65px;
-    .nav-settings-elements{
-      display: flex;
-      .nav-settings-elem{
-        margin-right: 15px;
-      }
-    }
-  }
-
-.logotype{
-  display: flex;
-  width: 160px;
-  min-width: 120px;
-  height: 65px;
-  color: white;
-  background-color: $blue;
-  font-weight: bold;
-  align-items: center;
-  justify-content: center;
-}
-
-.categories{
-  display: flex;
-  margin-left: 45px;
-}
-
-.category-item{
-  margin: 0 10px;
-}
 
 .sidebar{
   min-width: 160px;
